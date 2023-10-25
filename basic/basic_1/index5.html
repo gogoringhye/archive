@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .전체{width: 352px; background: #6ab0c1;
+        margin: auto;margin-top: 30px; /* 두개 자리 바뀌면 안됨. 마진이 마진탑을 포함하고 있음 */
+    }
+        .전체 .자식{
+            width: 104px;height: 104px;
+            background-color: pink;
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+            line-height: 104px;
+            color: white;
+
+        }
+        .전체 .첫째{background-image: url(img/img-1.png);}
+        .전체 .둘째{background-image: url(img/img-2.png);}
+        .전체 .셋째{background-image: url(img/img-3.png);margin-right: 0;}
+        .전체 .약{clear: both;}
+    </style>
+</head>
+<body>
+    <div class="전체">
+        <div class="첫째 자식">첫째</div>
+        <div class="둘째 자식">둘째</div>
+        <div class="셋째 자식">셋째</div>
+        <div class="약"></div>
+    </div>
+</body>
+</html>

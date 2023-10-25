@@ -1,0 +1,133 @@
+@charset "UFT-8";
+
+/* 반드시 세미콜론 찍어줘야함*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.깨짐현상방지::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ::after{content: "";}이렇게 세트, clear: both;는 약, display: block;로 인라인 요소를 블록요소로 만들어줌 */
+
+/* id를 불러올땐 #, class는 . */
+#전체 {
+    /* 아이디를 호출하는 방법: 아이디는 전체 사이트에 유일한 이름이어야한다.(반드시 하나 그 자리는 "전체" 포지션) */
+    background-color: #ecffe1;
+    width: 1000px;
+    margin: 30px auto 0;
+    /* 위 좌우 아래 */
+    /* 
+   margin: 상하 좌우;
+   margin:0 auto;는 아래 4가지 의미를 동시에 포함하고 있음. 
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: auto;
+   margin-right: auto; */
+}
+
+#전체 .놀부 {
+    padding: 20px;
+}
+
+#전체 .놀부 .자식 {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left;
+    background-color: #e1faa2;
+}
+
+#전체 .놀부 .자식.자식1 {}
+
+#전체 .놀부 .자식.자식1 img {
+    width: 100%;
+}
+
+#전체 .놀부 .자식.자식2 {
+    /* 공간의 넓이=padding-left+border-left+width+padding-right+border-right: ;
+
+        공간의 높이=padding-top+border-top+height+padding-bottom+ +border-bottom: ; 
+
+        공간의 넓이=10px+5px+25%+10px+5px
+    
+        공간의 높이=10px+5px+자식의높이+10px+5px*/
+    padding: 10px;
+    border: 5px solid red;
+    box-sizing: border-box;
+    background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/eViY/image/is3UFbmo7Gwuiln43EznmVZFwXo.jpg);
+    /* 자식은 부모의 padding을 침범 못함, background-image는 패딩까지 들어감 */
+}
+
+#전체 .놀부 .자식.자식3 {
+    height: 200px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3419/3419250.png);
+
+    background-size: 50px;
+    /* 이미지 크기조절 */
+
+    background-repeat: no-repeat;
+    /* 이미지반복 */
+
+    /* background-position: center center */
+    /*x축 y축(x와 y축의 값이 같을 땐 단축할 수 있음) */
+
+    /* background-position: center*/
+    /*센터는 50%라는 뜻 center center 적은 것과 동일함 */
+
+    /* background-position: 50% center;(background-position: -2% center;와 동일한 값이기 때문에 아래 값으로 덮여쓰기 됨)*/
+
+    /* margin-right: -20px; marjin은 마이너스 값이 들어갈(겹침)수 있지만패딩은 불가능 */
+    background-position: -2% center;
+}
+
+
+#전체 .놀부 .자식.자식4 {
+    position: relative;
+    /* 아무런 영향을 주지 않고 텍스트의 기준을 잡아줌, 죽은 텍스트는 자식4로부터 못벗어남 (못나간다는 뜻은 아님)*/
+    margin-right: 0;
+    height: 200px;
+    background-image: url(https://i3.ruliweb.com/img/22/12/12/18506a302b94d0772.jpg);
+    background-size: cover;
+    /* repeat을 주지 않으면 기본적으로 반복되는데 크기가 커서 반복되는게 보이지않음. 1차는 넓이를 100%로 맞춤, cover 적으면 화면에 비율을 유지하며 그대로 커짐(그래서 잘리거나 지나치게 확대된 사진이 생김) */
+    background-position: center;
+    /* 사진의 정중앙이 보임 */
+    overflow: hidden;
+}
+
+/* 개발자에서 delete누르면 다른 값 적용할 수 있는 게 나타남 */
+
+#전체 .놀부 .자식.자식4 .text {
+    background-color: #ff80c0;
+    position: absolute;
+    /*position: absolute;유령*/
+    /* 위치를 잡아주면 누구한테 매달려있는지 알 수 있음 */
+
+    left: 50%;
+    /* left 기준:부모의 넓이 */
+    top: 100%;
+    /* top의 기준:부모의 넓이 */
+
+    transform: translate(-50%, -50%);
+    /* 여기서 기준은 나 자신(왼쪽 위쪽으로 올라가서 음수임 x축과 y축)--> %(백분율)의 기준.text 자신 */
+    padding: 10px 30px;
+    border-radius: 10px;
+    /* radius=반경 */
+    /* 원의 반지름=px */
+    opacity: 0;
+    /* 투명도, opacity 0의 의미는 우리 눈에 안보이는 것 */
+    color: white;
+    transition: 0.3s;
+    /* 애니매이션은 시간을 빨리줘야함 0.2초는 너무 빠름 */
+}
+
+
+#전체 .놀부 .자식.자식4:hover .text {
+    opacity: 1;
+    top: 50%;
+}
+
+/* 마우스를 올리면 텍스트를 투명도 1로 만들겠다 */

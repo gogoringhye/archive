@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 부모는 자식의 높이를 따라가고, 자식은 부모의 넓이를 따라감 */
+        *{margin: 0;padding: 0;}
+        .전체{width: 352px;background-color: #b1e7b1;
+            margin: auto; /* 영역을 가운데로 정렬 */
+            margin-top: 30px;/* 위의 공간 */
+            text-align: center;/* 정렬 */
+            line-height: 104px;/* 행간 */
+            color: white; /* 글자의 색 */
+}
+        .전체 .첫째{width: 104px;height: 104px;
+            background-image: url(img/img-1.png);
+            float: left;margin-right: 20px;
+        }
+        .전체 .둘째{width: 104px;height: 104px;
+            background-image: url(img/img-2.png);
+            float: left;margin-right: 20px;
+        }
+        .전체 .셋째{width: 104px;height: 104px;
+            background-image: url(img/img-3.png);
+            float: left;
+        }
+        .전체 .약{clear:both;}
+    </style>
+</head>
+<body>
+    <div class="전체">
+        <div class="첫째">첫째</div>
+        <div class="둘째">둘째</div>
+        <div class="셋째">셋째</div>
+        <div class="약"></div>
+    </div>
+</body>
+</html>

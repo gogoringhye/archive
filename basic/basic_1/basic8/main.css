@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* UFT 무조건 대문자, 큰따옴표, 세미콜론 안찍으면 오류남 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.부모 {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: #CCC8AA;
+    width: 1000px;
+    background-image: url(https://manual.notch.one/0.9.23/en/docs/nodes/generators/grid/img/node-generators-grid-img.jpg);
+    background-size: cover;margin-bottom: 3000px;
+}
+
+
+.부모 .자식 {
+    height: 200px;
+    width: 200px;
+}
+
+
+.부모 .첫째 {
+    background-color: #9D44C0;
+    left: 200px;
+    position: relative;
+}
+
+/* position:relative는 땡겨도 원래 자기 자리를 기억하고 있기 때문에 둘째가 첫째 자리를 침범하지 않음-->주위에 아무런 영향을 주지 않음 */
+
+
+.부모 .둘째 {
+    background-color: #F0B86E;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+/* 부모 입장에서 죽은 자식, 둘째가 죽어서 셋짜가 그 자리로 들어가있음.
+그래서 부모는 첫째와 셋째의 높이값만 차지함
+부모가 포지션이 있다면 부모, 없다면 최종적으로 바디(할아버지)
+(둘째는 형제, 자식에게 매달리지 않고 부모, 할아버지에게 달라붙음)
+ */
+
+.부모 .셋째 {
+    background-color: #7EAA92;position: static;
+}
+
+/* position: static 기본값 */
+
+.부모 .넷째 {
+    background-color: #ddf42b; position: fixed; right: 0px; top: 200px;
+}
+/* fixed는 반드시 화면에 붙음
+ 
+
+*/
+/* 왼쪽에 공간을 주면 오른쪽으로 밀려남(나의 왼쪽과 나의 부모가 가지고 있는 왼쪽 거리를 주는 것) */
+/* 사이트의 중력은 위로 감 */
