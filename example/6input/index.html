@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h2>사용자로부터 입력받기</h2>
+        <div class="첫째">
+            <form action="#">
+                <!-- //label의 for의 값과 input의 id의 값이 같아야 연결됨 -->
+                <label for="name">이름</label>
+                <input type="text" id="name" name="my-name">
+                <br><br>
+                <label for="age">나이</label>
+                <input type="number" id="age" name="my-age">
+                <br><br>
+                <button type="submit">제출</button>
+                <button type="reset">초기화</button>
+            </form>
+        </div>
+        <div class="둘째">
+            <form action="#">
+                <fieldset>
+                    <legend>반장</legend>
+                    <label for="name1">이름</label>
+                    <input type="text" id="name1" name="name-1">
+                    <br><br>
+                    <label for="age1">나이</label>
+                    <input type="number" id="age1" name="age-1">
+                </fieldset>
+
+                <fieldset>
+                    <legend>부반장</legend>
+                    <label for="name2">이름</label>
+                    <input type="text" id="name2" name="name-2">
+                    <br><br>
+                    <label for="age2">나이</label>
+                    <input type="number" id="age2" name="age-2">
+                </fieldset>
+            </form>
+        </div>
+        <div class="셋째"></div>
+        <div class="넷째"></div>
+        <div class="다섯째"></div>
+        <div class="여섯째"></div>
+        <div class="일곱째"></div>
+    </div>
+</body>
+</html>
