@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper의 Use Swiper from CDN의 link 부분, 스크립트 기반이므로 제이쿼리 연결할 필요없음 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <!-- fontawesome은 순서 상관없음-->
+</head>
+
+<body>
+    <div class="singleProduct">
+
+        <header>
+            <img src="images/menu_Icon_left.svg" alt="menu_Icon_left" class="menu_Icon_left">
+            <h2>Single Product</h2>
+            <img src="images/menu_Icon_right.svg" alt="menu_Icon_right" class="menu_Icon_right">
+        </header>
+        <main>
+            <h2>Modern T-shirt for Women</h2>
+            <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+
+            <div>
+                <!-- Add Swiper HTML Layout 부분 긁어옴 -->
+                <div class="single_product">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/product_detail_01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/product_detail_02.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/product_detail_01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/product_detail_02.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+
+            <div class="details_info">
+                <h3>$21.99</h3>
+                <p>Look stunning with this modern t-shirt. Its comfortable and attractive.</p>
+                <form action="#">
+                    <label for="color">colors</label>
+                    <select name="color" id="color">
+                        <option value="">colors</option>
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="silver">silver</option>
+                    </select>
+
+                    <label for="size">size</label>
+                    <select name="size" id="size">
+                        <option value="">size</option>
+                        <option value="XL">XL</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="S">S</option>
+                        <option value="XS">XS</option>
+                    </select>
+                    <input type="submit" value="Add to Cart" class="btn">
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper의 Use Swiper from CDN의 script 부분 -->
+    <script>
+        const swiper = new Swiper('.single_product', {
+            loop: true,
+            /* Resources->Demos->Slides per view auto->Core(사이트 만드는 방법에 대해 설명 잘 해놓음)의 script부분 복사 */
+            slidesPerView: 1.2,
+            spaceBetween: 25,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+
+        });
+    </script><!-- swiper의 Initialize Swiper -->
+
+</body>
+
+</html>
+<!-- GreenSchool 파스칼방식 -->
+<!-- greenSchool -->
+<!-- green_School_Student 스내이크방식 -->
