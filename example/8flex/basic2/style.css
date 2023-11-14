@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.container{border: 2px solid #000;background-color: green;}
+.container .item{border: 2px solid #000; background-color: yellow; width: 40%;}
+
+.container{display: flex;
+    height: 100vh;
+    /* 
+    flex는 main 축을 인식해야한다.(기본축의 기본은 ROW)
+    justify-는 main 축을 기준으로 정렬
+    align-는 main축과 cross되는 축의 정렬
+    */
+    justify-content: flex-start;/* 기본값 */
+    align-items: stretch;/* 기본값 */
+    /* 
+    🌋
+    메인축에 대한 명령이 
+    flex-direction:row --기본값
+    --> 메인축의 방향을 결정한다 
+    */
+}
+.container .item{/* height: 100px; */width: 200px;}
+/* flex의 item은 부모를 기준으로 부모 높이를 그대로 차지 */
+/* 부모는 자식 중 제일 긴 것의 높이를 따라감 */
