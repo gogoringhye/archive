@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid #000;
+    background-color: green;
+}
+
+.container .item {
+    border: 2px solid #000;
+    background-color: yellow;
+}
+
+
+.container {
+    display: flex;
+
+}
+
+.item {
+    /* 🤩무조건 암기) 줄어 들어라! 늘어나지마라! */
+    flex-basis: auto;
+    /* 기본값 */
+    /* flex-basis: 100px;, 지금은 아무 설정을 하지 않은 상황이니까 자식이 좁아서 밑으로 떨어지는데 만약 자식에게 밑으로 떨어지라는 명령을 주면 flex-basis도 200px, 300px(마치 스판처럼)늘어나는 문제가 생길수도 있어서 width를 사용하는 경우가 많음 */
+    width: 100px;
+
+    flex-grow: 0;
+    /* 기본값, 0은 부정, 늘어나는 거 하지말라는 의미 */
+    /* flex-grow: 1; */
+}
+
+.item:nth-child(2) {
+    flex-grow: 1;
+} /* flex-grow가 커진다는 것은 부모가 사용하지 않는 공간을 활용하여 어떻게 커질것인지 */
+
+
+
+
+
+
+/* 블록요소였던 것을 플렉스 시키는 순간? */

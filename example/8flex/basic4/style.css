@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid #000;
+    background-color: green;
+}
+
+.container .item {
+    border: 2px solid #000;
+    background-color: yellow;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* 100%보다 넘치면 아래로 떨어짐 */
+    align-content: center;
+    align-content: flex-start;/* 내용물이 위로 올라가고 있음 */
+    align-content: flex-end;/*  */
+    align-content: space-between;/* 화면 분배해서 똑같이? */
+    align-content: space-evenly;/* 공간을 전부 똑같이 나눠가짐 */
+
+}
+
+.item {
+    width: 30%;
+    height: 100px;
+}
