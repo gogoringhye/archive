@@ -1,6 +1,25 @@
 웹 사진 전체 다운
-example5,6,7복습(이해 안가는거)
-피그마(이해 안가는거)
-자바스크립트(인강)
-피그마 파일 재업
-하나카드 어떻게 네트리파이에 올라갔는지 원리?(수시 백업)
+example, figma, webstandard code 복습
+자바스크립트
+제이쿼리
+하나카드
+-------------------------------------
+3D완성
+example 9번(연습)
+스크롤러 사이트(구상)
+-https://renaudrohlinger.com/
+-https://dogstudio.co/cases/voo/
+-https://www.goal.com/story/nxgn2019en/
+-http://www.dementialab.org/discovery-lab/
+
+지난 2014년 Creativebloq에서 패럴랙스 스크롤링이 효과적으로 사용된 50가지의 사이트를 소개
+https://www.creativebloq.com/web-design/parallax-scrolling-1131762
+---------------------------
+피그마 수정
+---------------------------
+웹스토리보이 강의 참조
+111 
+222
+333
+
+네트리파이 업로드 + 필기 어떻게 보관하지 
