@@ -241,10 +241,95 @@
         console.log(str1.concat(', ', str2)) //Hello, JavaScript
         console.log(str2.concat(', ', str1)) //JavaScript, Hello
 
-        const someList = ['안녕', '', '난', '', '뽀로로야 ~', '!!'];      
-        console.log(...someList)//안녕 난 뽀로로야 ~ !!
-        console.log(''.concat(...someList))//안녕난뽀로로야 ~!!
-         // ... --> 전개 연산자(spread operator):배열의 각 요소를 개별적인 인수로 전달한다.(안에 들어있는 요소들을 묶어서 전달한다고 생각하면 됨)
+        const someList = ['안녕', '', '난', '', '뽀로로야 ~', '!!'];
+        console.log(...someList) //안녕 난 뽀로로야 ~ !!
+        console.log(''.concat(...someList)) //안녕난뽀로로야 ~!!
+        // ... --> 전개 연산자(spread operator):배열의 각 요소를 개별적인 인수로 전달한다.(안에 들어있는 요소들을 묶어서 전달한다고 생각하면 됨)
+
+        //인덱스 몇 번째에 있는지 찾기--> indexof()메서드
+
+        console.clear();
+
+        const greatMan = ['홍길도', '이순신', '강감찬', '김유신', '임꺽정'];
+
+        console.log(greatMan.indexOf('강감찬')) //2
+        console.log(greatMan.indexOf('임꺽정')) //4
+        console.log(greatMan.indexOf('임정')) //-1--> 없는 값을 indexOf()메서드로 찾으면 -1이 리턴(★)됨
+
+        console.clear();
+        let abcArl = "ABC DEFGHIJKLMN"; //띄워쓰기도 문자로 취급함
+
+        console.log(abcArl.indexOf('H')) //8
+        console.log(abcArl.indexOf('h')) //-1(대소문자 구분해야함)
+
+        console.log(abcArl.lastIndexOf('H')) //8(역순으로 검사)
+
+        let abcArr2 = "abcdABCD";
+
+        console.log(abcArr2.lastIndexOf('A')); //4
+        console.log(abcArr2.toLocaleUpperCase().indexOf('A')); //0
+        //toLocaleUpperCase() --> 대문자로 변환, 맨 앞에 있는 A가 검색된거라 0
+        console.log(abcArr2.toLocaleUpperCase().lastIndexOf('A')); //4, 뒤에서부터 검색하는데 A니까 4가 됨
+
+        //indexOf 옵션 --> indexOf("찾을 특정 값", 시작할 위치)
+        console.clear();
+        const nums = ['k', 'o', 'r', 'e', 'a', 'u', 's', 'a']
+
+        console.log(nums.indexOf('a')) //4
+        console.log(nums.indexOf('a', 5)) //7(a를 찾는데 인덱스 5번부터 찾아라)
+        //만약 'o','r','e'추가한 상황이라면
+        //const nums = ['k', 'o', 'r', 'e', 'a', 'u', 's', 'a','o','r','e'];
+        //console.log(nums.indexOf('a',8))//-1
+
+        //반복문
+
+        const nums2 = "abcdaasdfasdsasdfaabdasfjasdfja";
+
+        const serchNumber = 'asdf';
+        let startPosition = 0;
+        let lasetResult = [];
+
+        while (true) {
+            let idxRst = nums2.indexOf(serchNumber, startPosition);
+
+            if (idxRst == -1) {
+                break;
+            }
+            lasetResult.push(idxRst);
+            startPosition = idxRst + 1;
+        }
+        console.log("찾고자하는 인덱스는 " + lasetResult) //찾고자하는 인덱스는 5,13,25
+        console.log("출현 빈도 수 " + lasetResult.length) //출현 빈도 수 3
+
+        //배열에 특정 요소가 포함되어 있는지 없는지 알기 --> includes()
+
+        const testArr = ['korea', 'usa', 'china', 'japan', 'canada'];
+
+        console.log(testArr.includes('japan')) //true
+        console.log(testArr.includes('mexico')) //false
+
+        //배열내 요소들을 하나로 묶어주기 --> 그때, 문자열(String)타입으로 묶어주기-->join()
+        console.clear();
+        const testArr2 = ['korea', 'usa', 'china', 'japan', 'canada'];
+        console.log(testArr2.join()) //아무 옵션도 넣지 않고 호출하면 배열 요소 각각을 콤마(,)로 공백 없이 묶어줌
+        console.log(typeof testArr2.join()) //string
+        console.log(testArr2.join('-')) //구분자로 각각의 요소극 구분하여 하나의 문자열로 이어줌
+        console.log(testArr2.join(' '))
+        console.log(testArr2.join(', '))
+        console.log(testArr2.join('+'))
+        console.log(testArr2.join('/'))
+
+
+        //요소가 undefined, null이 있을때 join()메서드를 사용하면?--> 빈 문자열로 연결
+        const testArr3 = ['korea', 'usa', undefined, 'china', 'japan', null, 'canada'];
+        console.log(testArr3.join(', '))
+
+        const testArr4 = [];
+        console.log(testArr4.join(', ')) //""  출력되는 내용없음
+
+        //배열을 거꾸로 출력하기-->reverse()
+        const testArr5 = ['a', 'b', 'c', 'd', 'e'];
+        console.log(testArr5.reverse()) //['e', 'd', 'c', 'b', 'a']
     </script>
 </body>
 
