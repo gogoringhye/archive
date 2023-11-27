@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click</button>
+
+    <ul id="memberList">
+        <li id="p1">홍길동</li>
+        <li id="p2">이순신</li>
+        <li id="p3">강감찬</li>
+    </ul>
+
+    <script>
+        //DOM - li 엘리먼트의 특정 문자열로 li 요소 삭제하기
+
+        //[1] li의 문자열로 해당 요소 삭제
+
+        function removeEleByText(text) {
+            // console.log(text)
+            let li = document.querySelectorAll('li')
+            console.log(li) //Nodelist --> 유사배열
+            //NodeList 객체를 반환
+            //javaScript에서 Element 배열을 다룰시 --> .querySelectorAll를 사용하면 NodeList 객체를 반환(이것은 배열과 차이점이 있다.)
+            //배열에서 순회하는 메서드를 사용할 수 있음. --> for, for each..
+            //구브라우저(ie)는 지원하지 않음
+            //NodeList 객체는 브라우저의 API이다--> 그런데 jacaScript에서도 호출해서 사용할 수 있다.
+            let li2 = [...document.querySelectorAll('li')]
+            console.log(li2)//Array 객체로 반환(유사배열이 아닌 실제배열)
+        }
+        document.getElementById('btn').addEventListener('click', () => {
+            removeEleByText("홍길동")
+        })
+    </script>
+</body>
+
+</html>
