@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.text{
+  position: fixed; 
+  left: 30px; top: 10px; 
+  color: #fff;
+  z-index: 500;
+}
+
+.fixed-bg{
+  position: fixed; 
+  left: 0; top: 0; 
+  width: 100%; height: 100%;
+}
+.slide{
+  position: fixed; 
+  left: auto; top: auto; /* 방향 바꿀시 : auto; 기본값 left: auto; top: 0;*/
+  width: 100%; height: 100%;
+  padding: 50px;
+} 
+.slide-content{
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+/* 벽 */
+#slide01{background: url(image/kave3.png) no-repeat;
+z-index: 10;
+transform: translateY(-10px);}
+
+/* 스노우 맵*/
+#slide02 {
+  background: url(image/1.png) no-repeat center;
+  background-size: 51%;
+  top: 25px;
+  z-index: 1;
+}
+
+/* 크리스마스 맵 */
+#slide03 {
+  background: url(image/3.png) no-repeat center;
+  background-size: 51%;
+  top: 25px;
+  z-index: 1;;
+}
+
+/* 닫힌 창문 */
+#slide04 {
+  background: url(image/window_close1.png) no-repeat center;
+  background-size: 55%;
+  z-index: 15;
+  left: 0;
+  top:15px;
+} 
+
+/* 열린 창문 */
+#slide05 {
+  background: url(image/window_opne1.png) no-repeat center;
+  background-size: 55%;
+  z-index: 15;
+  left: 0;
+  top:15px;
+} 
+
+
+/* 😶‍🌫️섹션1--------------------------------------------- */
+
+/* 배찌 움짤 */
+#slide15 {
+  bottom: -570px;
+  z-index: 4;
+}
+
+#slide15 img {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  top: -28%;
+  right: 0px;
+}
+
+/* (배찌 합체)눈덩이 */
+#slide16 {
+  bottom: -640px;
+  z-index: 3;
+}
+
+#slide16 img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -28%;
+  right: 24px;
+  animation: snowrotate 2s linear infinite;
+}
+
+/* 😶‍🌫️섹션2--------------------------------------------- */
+
+/* 눈싸움 여자 */
+#slide18 {
+  bottom: -600px;
+  z-index: 4;
+}
+
+#slide18 img {
+  width: 200px;
+  height: 200px;
+  right: -90px;
+  top: -10%;
+  position: relative;
+}
+
+/* 눈싸움 남자 */
+#slide17 {
+  bottom: -580px;
+  z-index: 4;
+}
+
+#slide17 img {
+  width: 200px;
+  height: 200px;
+  left: -50px;
+  top: -50%;
+  position: relative;
+}
+
+/* 하얀 콧김 고구마 */
+#slide33{
+  left:700px; bottom: -615px; z-index: 3;
+ }
+#slide33 img{width: 100px; height: 130px;position: relative;top: -45%;left: 10px;}
+
+/* 파란 콧김 고구마 */
+#slide34{
+  left:700px; bottom: -615px; z-index: 3;
+  }
+#slide34 img{width: 150px; height: 180px;position: relative;top: -70%;left: 400px;}
+
+/* 눈덩이(여자쪽)*/
+#slide24 {
+  left: 1000px;
+  bottom: -600px;
+  z-index: 4;
+  animation: snowball_right 1s 0.5s linear infinite;
+}
+
+#slide24 img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: -20px;
+}
+
+/* 눈덩이 곡선 왼쪽(남자쪽) */
+#slide20 {
+  left: -250px;
+  bottom: -1150px;
+  z-index: 4;
+  animation: snowball_rotate_left 4s linear infinite;
+}
+
+#slide20 img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -90%
+}
+
+/* 눈덩이 곡선 오른쪽(남자쪽) */
+#slide25 {
+  right: -200px;
+  bottom: -1150px;
+  z-index: 4;
+  animation: snowball_rotate_right 4s 0.5s linear infinite;
+}
+
+#slide25 img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -80%
+}
+
+/* 😶‍🌫️섹션3--------------------------------------------- */
+
+
+/* 눈효과 */
+.pt{height: 100vh; z-index: 5; position: relative;}
+
+/* 할아버지 산타*/
+#slide21{
+  left:950px; bottom: -610px; z-index: 3;
+  animation: girl 0.5s linear infinite;}
+#slide21 img{width: 100px; height: 120px;position: relative;top: -55%;left: 80px;}
+
+/* 다오 산타 */
+#slide22{
+  left:700px; bottom: -615px; z-index: 3;
+  animation: boy 0.5s linear infinite;}
+#slide22 img{width: 150px; height: 180px;position: relative;top: -25%;left: 60px;}
+
+/* 눈덩이(여자쪽)*/
+#slide24{
+  left:1000px; bottom: -600px; z-index: 4;
+  animation: snowball_right 1s 0.5s linear infinite;}
+#slide24 img{width: 50px; height: 50px;}
+
+/* 눈덩이 곡선 오른쪽(남자쪽) */
+#slide25{
+  right:-200px; bottom: -1150px; z-index: 4;
+  animation: snowball_rotate_right 4s 0.5s linear infinite;}
+#slide25 img{width: 50px; height: 50px;}
+
+/* 😶‍🌫️섹션4--------------------------------------------- */
+
+/* 거꾸로 배찌 */
+#slide12 {right: -500px; top: -250px; z-index: 3;}
+#slide12 img {background-position: center;}
+
+/* 선물3 */
+#slide26{left: 1000px; z-index: 2;}
+#slide26 img{width: 230px; height: 280px;}
+
+/* 선물2 */
+#slide27{left: 700px; z-index: 3;}
+#slide27 img{width: 400px;height: 700px;position: relative;left: 150px;}
+
+/* 박스3 */
+#slide28{left: 400px; z-index: 2;}
+#slide28 img{width: 450px; height: 450px; position: relative;top: 150px;
+  left: 200px;}
+
+/* 창문틀 */
+#slide29 {background: url(img/window_line.png) no-repeat center;
+  background-size: 50%;
+  z-index: 15;
+  left: 0;
+  top:0;}
+
+/* 메리크리스마스 */
+#slide30{left: 400px; z-index: 20;}
+#slide30 img{  width: 1200px;height: 400px;position: relative;left: -120px;}
+
+
+@keyframes snowrotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes snowball_left{
+  0%{transform: translateX(-100px)}
+  100%{transform: translateX(400px)}
+}
+
+@keyframes snowball_right{
+  0%{transform: translateX(100px)}
+  100%{transform: translateX(-400px)}
+}
+
+@keyframes snowball_rotate_left{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(-360deg);}
+}
+
+@keyframes snowball_rotate_right{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes girl{
+  0%{transform: translateY(0px);}
+  100%{transform: translateY(-43px);}
+  0%{transform: translateY(0px);}
+}
+
+@keyframes boy{
+  0%{transform: translateY(0px);}
+  100%{transform: translateY(-43px);}
+  0%{transform: translateY(0px);}
+}
+
+
