@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.text{
+  position: fixed; 
+  left: 30px; top: 10px; 
+  color: #fff;
+  z-index: 500;
+}
+
+.fixed-bg{
+  position: fixed; 
+  left: 0; top: 0; 
+  width: 100%; height: 100%;
+}
+.slide{
+  position: fixed; 
+  left: auto; top: auto; /* 방향 바꿀시 : auto; 기본값 left: auto; top: 0;*/
+  width: 100%; height: 100%;
+  padding: 50px;
+} 
+.slide-content{
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+/* 벽 */
+#slide01{background: url(img/kave3.png) no-repeat;
+z-index: 10;
+transform: translateY(-10px);}
+
+/* 마을 아침 */
+#slide02{
+  background: url(img/town_m.png) no-repeat center;
+  background-size: 46%;
+  top: 100px;
+  z-index: 1;
+}
+/* 마을 저녁 */
+#slide03{
+  background: url(img/town_d.png) no-repeat center;
+  background-size: 46%;
+  top: 100px;
+  z-index: 1;
+}
+
+
+
+/* 🎃창문4~5 */
+/* 닫힌창문 */
+#slide04{background: url(img/window_close1.png) no-repeat center;
+  background-size: 50%;
+  z-index: 15;
+  left: 0;
+  top:0;
+} 
+
+/* 열린창문 */
+#slide05{background: url(img/window_opne1.png) no-repeat center;
+  background-size: 50%;
+  z-index: 15;
+  left: 0;
+  top:0;
+} 
+
+
+/* 🎃하늘 06~10 */
+/* 낮 하늘 */
+#slide06{left: 450px; top: 30px; }
+#slide06 img{width: 900px; height: 800px;}
+
+/* 노을 하늘 */
+#slide07{left: 450px; top: 30px;}
+#slide07 img{width: 900px; height: 700px;}
+
+/* 저녁하늘 */
+#slide08{left: 450px; top: 30px;}
+#slide08 img{width: 900px; height: 800px;}
+
+/* 밤하늘 */
+#slide09{left: 450px; top: 30px;}
+#slide09 img{width: 900px; height: 700px;}
+
+/* 달 */
+#slide10{left: 540px; top: 30px;}
+#slide10 img{width: 200px; height: 160px;}
+
+/* 산타 */
+#slide12{right:-500px; top: -200px; z-index: 3;} 
+#slide12 img{background-position: center;}
+
+
+
+/* 🎃아이들 15~25*/
+/* 눈굴리는 아이*/
+#slide15{
+  bottom: -570px; z-index: 4;}
+#slide15 img{width: 230px; height: 230px;}
+
+/* 눈사람 눈덩이 */
+#slide16{
+  bottom: -640px; z-index: 3;
+  }
+#slide16 img{width: 150px; height: 150px;
+  animation: snowrotate 2s linear infinite;} 
+
+/* 눈싸움남자 */
+#slide17{
+  bottom: -580px; z-index: 4;}
+#slide17 img{width: 230px; height: 230px;}
+
+/* 눈싸움여자 */
+#slide18{
+  bottom: -600px; z-index: 4;}
+#slide18 img{width: 230px; height: 230px;}
+
+/* 눈싸움 왼쪽 */
+#slide19{
+  left:750px; bottom: -650px; z-index: 4;
+  animation: snowball_left 1s linear infinite;}
+#slide19 img{width: 50px; height: 50px;}
+
+/* 눈싸움 곡선 왼쪽 */
+#slide20{
+  left:-250px; bottom: -1150px; z-index: 4;
+  animation: snowball_rotate_left 4s linear infinite;}
+#slide20 img{width: 50px; height: 50px;}
+
+/* 여자아이 */
+#slide21{
+  left:950px; bottom: -610px; z-index: 3;
+  animation: girl 0.5s linear infinite;}
+#slide21 img{width: 180px; height: 180px;}
+
+/* 남자아이 */
+#slide22{
+  left:700px; bottom: -615px; z-index: 3;
+  animation: boy 0.5s linear infinite;}
+#slide22 img{width: 180px; height: 180px;}
+
+/* 눈싸움 오른쪽 */
+#slide24{
+  left:1000px; bottom: -600px; z-index: 4;
+  animation: snowball_right 1s 0.5s linear infinite;}
+#slide24 img{width: 50px; height: 50px;}
+
+/* 눈싸움 곡선 오른쪽 */
+#slide25{
+  right:-200px; bottom: -1150px; z-index: 4;
+  animation: snowball_rotate_right 4s 0.5s linear infinite;}
+#slide25 img{width: 50px; height: 50px;}
+
+
+/* 🎃선물26~30 */
+/* 박스1 */
+#slide26{left: 1000px; z-index: 4;}
+#slide26 img{width: 200px; height: 300px;}
+
+/* 박스2 */
+#slide27{left: 700px; z-index: 4;}
+#slide27 img{width: 400px; height: 600px;}
+
+/* 박스3 */
+#slide28{left: 400px; z-index: 4;}
+#slide28 img{width: 500px; height: 700px;}
+
+/* 창문틀 */
+#slide29 {background: url(img/window_line.png) no-repeat center;
+  background-size: 50%;
+  z-index: 15;
+  left: 0;
+  top:0;}
+
+/* 메리크리스마스 */
+#slide30{left: 400px; z-index: 20;}
+#slide30 img{width: 1000px; height: 800px;}
+
+/* 눈효과 */
+.pt{height: 100vh; z-index: 5; position: relative;}
+
+
+@keyframes snowrotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes snowball_left{
+  0%{transform: translateX(-100px)}
+  100%{transform: translateX(400px)}
+}
+
+@keyframes snowball_right{
+  0%{transform: translateX(100px)}
+  100%{transform: translateX(-400px)}
+}
+
+@keyframes snowball_rotate_left{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(-360deg);}
+}
+
+@keyframes snowball_rotate_right{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+@keyframes girl{
+  0%{transform: translateY(0px);}
+  100%{transform: translateY(-43px);}
+  0%{transform: translateY(0px);}
+}
+
+@keyframes boy{
+  0%{transform: translateY(0px);}
+  100%{transform: translateY(-43px);}
+  0%{transform: translateY(0px);}
+}
+
+
