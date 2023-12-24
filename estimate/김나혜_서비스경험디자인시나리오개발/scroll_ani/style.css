@@ -156,7 +156,7 @@ body {
 
 .world .stage .house .add-mina {
     /* 미러 */
-    transform: translateZ(575vw);
+    transform: translateZ(341vw);
     background: none;
 }
 
@@ -174,7 +174,7 @@ body {
 
 .world .stage .house .add-mina4 {
     /* 네이키드 */
-    transform: translateZ(312vw);
+    transform: translateZ(575vw);
     background: none;
 }
 
@@ -216,19 +216,19 @@ body {
 
 .world .stage .house .add-Swervy {
     /* 스월비 */
-    transform: translateZ(-92vw);
+    transform: translateZ(-98vw);
     background: none;
 }
 
 .world .stage .house .add-Swervy2 {
     /* 스월비2 */
-    transform: translateZ(-55vw);
+    transform: translateZ(-68vw);
     background: none;
 }
 
 .world .stage .house .add-Swervy3 {
     /* 스월비3 */
-    transform: translateZ(-406vw);
+    transform: translateZ(-419vw);
     background: none;
 }
 
@@ -271,7 +271,7 @@ body {
 
 .world .stage .house .add-Swervy10 {
     /* 스월비10 */
-    transform: translateZ(-325vw);
+    transform: translateZ(-350vw);
     background: none;
 }
 
@@ -315,7 +315,7 @@ body {
 
 .world .stage .house .add-ElleTeresa2 {
     /*  Elle Teresa 13 */
-    transform: translateZ(-1224vw);
+    transform: translateZ(-1264vw);
     background: none;
 }
 
@@ -327,31 +327,31 @@ body {
 
 .world .stage .house .add-ElleTeresa4 {
     /*  Elle Teresa 15 */
-    transform: translateZ(-908vw);
+    transform: translateZ(-862vw);
     background: none;
 }
 
 .world .stage .house .add-ElleTeresa5 {
     /*  Elle Teresa 16 */
-    transform: translateZ(-1111vw);
+    transform: translateZ(-1070vw);
     background: none;
 }
 
 .world .stage .house .add-ElleTeresa6 {
     /*  Elle Teresa 17 */
-    transform: translateZ(-1038vw);
+    transform: translateZ(-967vw);
     background: none;
 }
 
 .world .stage .house .add-ElleTeresa7 {
     /*  Elle Teresa 18 */
-    transform: translateZ(-1374vw);
+    transform: translateZ(-1450vw);
     background: none;
 }
 
 .world .stage .house .add-ElleTeresa8 {
     /*  Elle Teresa 19 */
-    transform: translateZ(-1322vw);
+    transform: translateZ(-1370vw);
     background: none;
 }
 
@@ -418,14 +418,7 @@ body {
     /*라나6 */
     width: 50vw;
     height: 32vw;
-    transform: translate(24vw, 42vw);
-}
-
-.world .stage .house .add-Lana6 .la6 {
-    /*라나6 */
-    width: 50vw;
-    height: 32vw;
-    transform: translate(24vw, 42vw);
+    transform: translate(24vw, 38vw);
 }
 
 .world .stage .house .add-Lana6 .la7 {
@@ -502,9 +495,9 @@ body {
 
 .world .stage .house .add-mina4 .mn4 {
     /* 네이키드 */
-    width: 50vw;
-    height: 42vw;
-    transform: translate(4vw, 16vw);
+    width: 40vw;
+    height: 34vw;
+    transform: translate(-3vw, 3vw);
 }
 
 .world .stage .house .add-mina5 .mn5 {
@@ -518,7 +511,7 @@ body {
     /* 미인 */
     width: 22vw;
     height: 25vw;
-    transform: translate(61vw, 22vw);
+    transform: translate(66vw, 24vw);
 }
 
 
@@ -538,27 +531,27 @@ body {
     /* 스월비1 */
     width: 22vw;
     height: 30vw;
-    transform: translate(72vw, 24vw);
+    transform: translate(78vw, 19vw);
 }
 
 .world .stage .house .add-Swervy2 .sv2 {
-    width: 40vw;
-    height: 40vw;
-    transform: translate(0vw, 17vw);
+    /* 스월비2 */
+    width: 35vw;
+    height: 35vw;
+    transform: translate(0vw, 10vw);
 }
-
 .world .stage .house .add-Swervy3 .sv3 {
     /*스월비3*/
     width: 55vw;
     height: 59vw;
-    transform: translate(41vw, 13vw);
+    transform: translate(58vw, 13vw);
 }
 
 .world .stage .house .add-Swervy4 .sv4 {
     /* 스월비4 */
-    width: 40vw;
+    width: 33vw;
     height: 40vw;
-    transform: translate(0vw, 28vw);
+    transform: translate(0vw, 20vw);
 }
 
 .world .stage .house .add-Swervy5 .sv5 {
@@ -570,9 +563,9 @@ body {
 
 .world .stage .house .add-Swervy6 .sv6 {
     /* 스월비6 */
-    width: 45vw;
-    height: 46vw;
-    transform: translate(64vw, 19vw);
+    width: 40vw;
+    height: 42vw;
+    transform: translate(40vw, 19vw);
 }
 
 .world .stage .house .add-Swervy7 .sv7 {
@@ -595,7 +588,7 @@ body {
     /* 스월비10 */
     width: 25vw;
     height: 31vw;
-    transform: translate(22vw, 22vw);
+    transform: translate(16vw, 22vw);
 }
 
 
@@ -649,37 +642,37 @@ body {
 
 .world .stage .house .add-ElleTeresa6 .et6 {
     /* Elle Teresa17 */
-    width: 45vw;
-    height: 35vw;
-    transform: translate(15vw, 17vw);
+    width: 30vw;
+    height: 25vw;
+    transform: translate(21vw, 14vw);
 }
 
 .world .stage .house .add-ElleTeresa7 .et7 {
     /* Elle Teresa18 */
     width: 30vw;
     height: 30vw;
-    transform: translate(18vw, 17vw);
+    transform: translate(12vw, 13vw);
 }
 
 .world .stage .house .add-ElleTeresa8 .et8 {
     /* Elle Teresa19 */
     width: 46vw;
     height: 37vw;
-    transform: translate(37vw, 24vw);
+    transform: translate(37vw, 12vw);
 }
 
 .world .stage .house .add-ElleTeresa9 .et9 {
     /* Elle Teresa20 */
     width: 50vw;
     height: 30vw;
-    transform: translate(31vw, 5vw);
+    transform: translate(38vw, 5vw);
 }
 
 .world .stage .house .add-ElleTeresa10 .et10 {
     /* Elle Teresa21 */
     width: 38vw;
     height: 26vw;
-    transform: translate(27vw, 23vw);
+    transform: translate(15vw, 23vw);
 }
 
 
